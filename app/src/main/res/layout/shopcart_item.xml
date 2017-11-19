@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/shopcart_item_layout"
+              android:layout_marginTop="20dp"
+              android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/shopcart_product_image"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:hapticFeedbackEnabled="true"
+        android:scaleType="fitStart"
+        android:src="@drawable/desktop1"/>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:id="@+id/shopcart_product_name"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:text="ssssssssssssssssssssssssaaaaaaa"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/shopcart_product_stock"
+            android:layout_column="0"
+            android:layout_marginTop="10dp"
+            android:layout_row="1"
+            android:text="In Stock"
+            ></TextView>
+
+
+    </GridLayout>
+    <TextView
+        android:id="@+id/shopcart_product_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:text="2000 Kr"
+        android:textSize="14sp"/>
+
+    <EditText
+        android:id="@+id/shopcart_product_num"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_width="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:cursorVisible="true"
+        android:textCursorDrawable="@null"
+        android:text="1"/>
+</LinearLayout>

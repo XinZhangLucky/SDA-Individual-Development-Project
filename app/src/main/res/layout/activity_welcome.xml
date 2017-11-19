@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.computerstoreapp.view.WelcomeView">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:scrollbars="vertical">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:rowCount="2">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_row="0"
+                android:orientation="vertical"
+                android:rowCount="4">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_margin="10dp"
+                    android:layout_row="0"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/welcome"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="Login"
+                        android:textAlignment="center"
+                        android:textSize="50sp"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/emailLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_row="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/mailTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:text="E-mail address"
+                        android:textSize="20sp"/>
+
+                    <EditText
+                        android:id="@+id/edit_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorAccent"
+                        android:cursorVisible="true"
+                        android:textCursorDrawable="@null"
+                        android:hint="e-mail address"
+                        android:inputType="textEmailAddress"
+                        android:padding="10dp"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:id="@+id/textview_emailValid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="The email address is not exist."
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="20sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_row="2"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="password"
+                        android:textSize="20sp"/>
+
+                    <EditText
+                        android:id="@+id/edit_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAccent"
+                        android:ems="10"
+                        android:cursorVisible="true"
+                        android:textCursorDrawable="@null"
+                        android:hint="password"
+                        android:inputType="textPassword"
+                        android:padding="10dp"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:id="@+id/textview_passwordValid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="The password is wrong."
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="20sp"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/logIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_row="3"
+                    android:onClick="logIn"
+                    android:padding="10dp"
+                    android:text="Log In"
+                    android:textSize="18sp"/>
+            </GridLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_row="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:text="New to this computer store?"
+                    android:textSize="20sp"/>
+
+                <Button
+                    android:id="@+id/createAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_row="3"
+                    android:onClick="createNewAccount"
+                    android:padding="5dp"
+                    android:text="@string/title"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+
+
+        </GridLayout>
+    </ScrollView>
+
+</LinearLayout>

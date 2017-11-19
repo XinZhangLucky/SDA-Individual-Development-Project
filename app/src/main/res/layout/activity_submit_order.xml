@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.example.android.computerstoreapp.view.SubmitOrderView">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:scrollbars="vertical">
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_margin="10dp"
+            android:layout_row="0"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/welcome"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add a new address"
+                android:textAlignment="center"
+                android:textSize="30sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Be sure to click Ship to this address when done."
+            android:textSize="18dp"
+            android:padding="10dp"
+            android:textStyle="normal"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/order_saved_info"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Full Name :"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/order_fullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:cursorVisible="true"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:lines="1"
+                android:textCursorDrawable="@null"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address line 1: "
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/order_address1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorAccent"
+                android:cursorVisible="true"
+                android:hint="Street address,P.O.box,company name,c/o"
+                android:singleLine="true"
+                android:lines="1"
+                android:maxLines="1"
+                android:textCursorDrawable="@null"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address line 2: "
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/order_address2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:cursorVisible="true"
+                android:layout_marginTop="5dp"
+                android:hint="Apartment,suite,unit,building,floor,etc."
+                android:maxLines="1"
+                android:singleLine="true"
+                android:lines="1"
+                android:textCursorDrawable="@null"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="City: "
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/order_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:cursorVisible="true"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:lines="1"
+                android:textCursorDrawable="@null"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="State/Province/Region: "
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/order_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:cursorVisible="true"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:lines="1"
+                android:textCursorDrawable="@null"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ZIP:  "
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/order_zip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:cursorVisible="true"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:lines="1"
+                android:textCursorDrawable="@null"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone number: "
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/order_telephone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:layout_marginTop="5dp"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:lines="1"
+                android:cursorVisible="true"
+                android:textCursorDrawable="@null"/>
+
+        </LinearLayout>
+            <TextView
+                android:id="@+id/submit_valid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                      android:text="Please input all the information."
+                      android:textColor="@android:color/holo_red_dark"
+                      android:textSize="20sp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="deliverToThisAddress"
+                android:padding="10dp"
+                android:text="Deliver to this address"/>
+        </GridLayout>
+    </ScrollView>
+</LinearLayout>
