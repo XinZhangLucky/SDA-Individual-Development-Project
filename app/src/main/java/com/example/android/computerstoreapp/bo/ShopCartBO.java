@@ -1,6 +1,7 @@
 package com.example.android.computerstoreapp.bo;
 
 import com.example.android.computerstoreapp.dao.impl.ShopcartDAOInternal;
+import com.example.android.computerstoreapp.dao.inf.ShopcartDAO;
 import com.example.android.computerstoreapp.entity.DesktopProduct;
 import com.example.android.computerstoreapp.entity.MouseProduct;
 import com.example.android.computerstoreapp.entity.Product;
@@ -15,7 +16,7 @@ import java.util.List;
 
 public class ShopCartBO {
 
-    private ShopcartDAOInternal mShopcartDAO;
+    private ShopcartDAO mShopcartDAO;
     private final static String DESKTOPPRODUCT = "desktopproduct";
     private final static String MOUSEPRODUCT = "mouseproduct";
     protected static List<ShopCartProduct> mProducts = new ArrayList<>();

@@ -1,6 +1,7 @@
 package com.example.android.computerstoreapp.bo;
 
 import com.example.android.computerstoreapp.dao.impl.OrderAddressDAOInternal;
+import com.example.android.computerstoreapp.dao.inf.OrderAddressDAO;
 import com.example.android.computerstoreapp.entity.OrderAddress;
 
 import java.util.ArrayList;
@@ -13,7 +14,7 @@ import java.util.List;
 public class OrderAddressBO {
 
     private OrderAddress mOrderAddress;
-    private OrderAddressDAOInternal mOrderAddressDAOInternal;
+    private OrderAddressDAO mOrderAddressDAOInternal;
 
     public OrderAddressBO() {
         mOrderAddressDAOInternal = new OrderAddressDAOInternal();

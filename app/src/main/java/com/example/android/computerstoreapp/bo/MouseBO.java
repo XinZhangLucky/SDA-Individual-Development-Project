@@ -1,6 +1,7 @@
 package com.example.android.computerstoreapp.bo;
 
 import com.example.android.computerstoreapp.dao.impl.MouseDAOInternal;
+import com.example.android.computerstoreapp.dao.inf.MouseDAO;
 import com.example.android.computerstoreapp.entity.MouseProduct;
 
 import java.util.ArrayList;
@@ -13,7 +14,7 @@ import java.util.List;
 public class MouseBO {
 
     private List<MouseProduct> mMouseProductArrayList;
-    private MouseDAOInternal mMouseDAO;
+    private MouseDAO mMouseDAO;
 
 
     public MouseBO() {

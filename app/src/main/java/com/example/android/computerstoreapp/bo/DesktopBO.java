@@ -1,6 +1,7 @@
 package com.example.android.computerstoreapp.bo;
 
 import com.example.android.computerstoreapp.dao.impl.DesktopDAOInternal;
+import com.example.android.computerstoreapp.dao.inf.DesktopDAO;
 import com.example.android.computerstoreapp.entity.DesktopProduct;
 
 import java.util.ArrayList;
@@ -13,7 +14,7 @@ import java.util.List;
 public class DesktopBO {
 
     private List<DesktopProduct> mDesktopProductArrayList;
-    private DesktopDAOInternal mDesktopDAO;
+    private DesktopDAO mDesktopDAO;
 
 
     public DesktopBO() {

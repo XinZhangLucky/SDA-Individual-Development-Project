@@ -1,6 +1,7 @@
 package com.example.android.computerstoreapp.bo;
 
 import com.example.android.computerstoreapp.dao.impl.UserDAOInternal;
+import com.example.android.computerstoreapp.dao.inf.UserDAO;
 import com.example.android.computerstoreapp.entity.User;
 
 import java.util.ArrayList;
@@ -11,7 +12,7 @@ import java.util.ArrayList;
 
 public class UserBO {
 
-    private UserDAOInternal mUserDAO;
+    private UserDAO mUserDAO;
     private User mUser;
     private ArrayList<User> userArrayList;
 
