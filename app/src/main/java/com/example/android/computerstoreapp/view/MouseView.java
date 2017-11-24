@@ -1,7 +1,5 @@
 package com.example.android.computerstoreapp.view;
 
-
-
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
@@ -14,46 +12,34 @@ import com.example.android.computerstoreapp.entity.Product;
 
 import java.util.List;
 
-
 public class MouseView extends BaseActivityView {
-
     protected MouseBO mMouseBO;
-
     private ProductAdapter adapter;
-
     private List<? extends Product> mMouseList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         setContentView(R.layout.activity_mouse_main);
-
-
         mMouseBO = new MouseBO();
-
         mMouseList = mMouseBO.getMouseProductArrayList();
         if (mMouseList.size() == 0) {
             initMouseProduct();
             mMouseList = mMouseBO.getMouseProductArrayList();
         }
-
-//        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view_mouse);
-        RecyclerView recyclerView = (RecyclerView) this.findViewById(R.id.recycler_view_mouse) ;
+        RecyclerView recyclerView = (RecyclerView) this.findViewById(R.id.recycler_view_mouse);
         GridLayoutManager layoutManager = new GridLayoutManager(this, 2,
                 LinearLayoutManager.VERTICAL, false);
-        if(recyclerView!=null){
+        if (recyclerView != null) {
             recyclerView.setLayoutManager(layoutManager);
             adapter = new ProductAdapter(mMouseList);
             recyclerView.setAdapter(adapter);
         }
-
         super.onCreate(savedInstanceState);
-
     }
 
 
     @Override
     protected void onResume() {
-
         super.onResume();
         mMouseList = mMouseBO.getMouseProductArrayList();
         adapter.setProductList(mMouseList);

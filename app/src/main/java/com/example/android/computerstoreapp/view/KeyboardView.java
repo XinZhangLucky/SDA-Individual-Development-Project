@@ -8,7 +8,6 @@ public class KeyboardView extends BaseActivityView {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         setContentView(R.layout.activity_keyboard_main);
         super.onCreate(savedInstanceState);
     }

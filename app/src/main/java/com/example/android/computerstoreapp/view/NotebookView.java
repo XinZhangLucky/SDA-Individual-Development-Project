@@ -10,6 +10,5 @@ public class NotebookView extends BaseActivityView {
     protected void onCreate(Bundle savedInstanceState) {
         setContentView(R.layout.activity_notebook_main);
         super.onCreate(savedInstanceState);
-
     }
 }

@@ -149,10 +149,10 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/deliver_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="deliverToThisAddress"
-        android:id="@+id/deliver_btn"
         android:padding="10dp"
         android:text="Deliver to this address"/>
 </LinearLayout>

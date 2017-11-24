@@ -9,12 +9,7 @@ import org.litepal.crud.DataSupport;
 
 import java.util.List;
 
-/**
- * Created by android on 2017-11-09.
- */
-
 public class MouseDAOInternal implements MouseDAO {
-
 
     @Override
     public boolean register(MouseProduct mouseProduct) {
@@ -23,13 +18,12 @@ public class MouseDAOInternal implements MouseDAO {
 
     @Override
     public List<MouseProduct> selectAll() {
-        List<MouseProduct> mouseProductList= DataSupport.findAll(MouseProduct.class);
+        List<MouseProduct> mouseProductList = DataSupport.findAll(MouseProduct.class);
         return mouseProductList;
     }
 
     @Override
     public MouseProduct updateProdect(MouseProduct product, int id, int productNum) {
-
         ContentValues values = new ContentValues();
         values.put("num", productNum);
         DataSupport.update(MouseProduct.class, values, id);

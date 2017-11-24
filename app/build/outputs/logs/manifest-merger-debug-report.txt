@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:2:1-62:12
-INJECTED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:2:1-62:12
-INJECTED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:2:1-62:12
-INJECTED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:2:1-62:12
+ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:2:1-52:12
+INJECTED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:2:1-52:12
+INJECTED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:2:1-52:12
+INJECTED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:2:1-52:12
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/moon/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/96a700e387fe22d3699136c4bfb0813b/AndroidManifest.xml:2:1-11:12
 MERGED from [org.litepal.android:core:1.6.0] /Users/moon/.gradle/caches/transforms-1/files-1.1/core-1.6.0.aar/de381dc75f7f1f6179c7b14d296c2087/AndroidManifest.xml:2:1-16:12
 MERGED from [com.android.support:design:26.0.0-alpha1] /Users/moon/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/12cca91065815e865a1fccac17fb20dd/AndroidManifest.xml:17:1-31:12
@@ -18,25 +18,25 @@ MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/moon/.gra
 MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/moon/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.0-alpha1.aar/27cd655e42e3ae8cd736d470fe4cc5cf/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/moon/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.0.0-alpha1.aar/951c2291e95a7ff4c2a990f0ff375bfe/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/moon/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.0-alpha1.aar/86a5b38c87212c8fc3b380eb30829fa2/AndroidManifest.xml:17:1-31:12
-INJECTED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:2:1-62:12
-INJECTED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:2:1-62:12
-INJECTED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:2:1-62:12
+INJECTED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:2:1-52:12
+INJECTED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:2:1-52:12
+INJECTED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:2:1-52:12
 	package
 		ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:3:11-57
 		INJECTED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml
-		ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:2:1-62:12
+		ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:2:1-52:12
 		INJECTED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml
-		ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:2:1-62:12
+		ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:2:1-52:12
 		INJECTED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:5:5-60:19
+ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:5:5-50:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/moon/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/96a700e387fe22d3699136c4bfb0813b/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/moon/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/96a700e387fe22d3699136c4bfb0813b/AndroidManifest.xml:9:5-20
 MERGED from [org.litepal.android:core:1.6.0] /Users/moon/.gradle/caches/transforms-1/files-1.1/core-1.6.0.aar/de381dc75f7f1f6179c7b14d296c2087/AndroidManifest.xml:11:5-14:19
@@ -96,61 +96,61 @@ ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.x
 	android:name
 		ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:20:19-88
 activity#com.example.android.computerstoreapp.view.CreateAccountPageView
+ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:22:9-23:20
+	android:name
+		ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:22:19-97
+activity#com.example.android.computerstoreapp.view.DesktopView
+ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:24:9-25:20
+	android:name
+		ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:24:19-87
+activity#com.example.android.computerstoreapp.view.NotebookView
+ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:26:9-27:20
+	android:name
+		ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:26:19-88
+activity#com.example.android.computerstoreapp.view.CPUView
+ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:28:9-29:20
+	android:name
+		ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:28:19-83
+activity#com.example.android.computerstoreapp.view.MonitorView
+ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:30:9-31:20
+	android:name
+		ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:30:19-87
+activity#com.example.android.computerstoreapp.view.KeyboardView
 ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:32:9-33:20
 	android:name
-		ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:32:19-97
-activity#com.example.android.computerstoreapp.view.DesktopView
+		ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:32:19-88
+activity#com.example.android.computerstoreapp.view.MemoryView
 ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:34:9-35:20
 	android:name
-		ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:34:19-87
-activity#com.example.android.computerstoreapp.view.NotebookView
+		ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:34:19-86
+activity#com.example.android.computerstoreapp.view.AudiocardView
 ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:36:9-37:20
 	android:name
-		ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:36:19-88
-activity#com.example.android.computerstoreapp.view.CPUView
+		ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:36:19-89
+activity#com.example.android.computerstoreapp.view.HarddiskView
 ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:38:9-39:20
 	android:name
-		ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:38:19-83
-activity#com.example.android.computerstoreapp.view.MonitorView
+		ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:38:19-88
+activity#com.example.android.computerstoreapp.view.MouseView
 ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:40:9-41:20
 	android:name
-		ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:40:19-87
-activity#com.example.android.computerstoreapp.view.KeyboardView
+		ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:40:19-85
+activity#com.example.android.computerstoreapp.view.DetailView
 ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:42:9-43:20
 	android:name
-		ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:42:19-88
-activity#com.example.android.computerstoreapp.view.MemoryView
+		ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:42:19-86
+activity#com.example.android.computerstoreapp.view.ShopcartListView
 ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:44:9-45:20
 	android:name
-		ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:44:19-86
-activity#com.example.android.computerstoreapp.view.AudiocardView
+		ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:44:19-92
+activity#com.example.android.computerstoreapp.view.SubmitOrderView
 ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:46:9-47:20
 	android:name
-		ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:46:19-89
-activity#com.example.android.computerstoreapp.view.HarddiskView
+		ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:46:19-91
+activity#com.example.android.computerstoreapp.view.CreatedOrder
 ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:48:9-49:20
 	android:name
 		ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:48:19-88
-activity#com.example.android.computerstoreapp.view.MouseView
-ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:50:9-51:20
-	android:name
-		ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:50:19-85
-activity#com.example.android.computerstoreapp.view.DetailView
-ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:52:9-53:20
-	android:name
-		ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:52:19-86
-activity#com.example.android.computerstoreapp.view.ShopcartListView
-ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:54:9-55:20
-	android:name
-		ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:54:19-92
-activity#com.example.android.computerstoreapp.view.SubmitOrderView
-ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:56:9-57:20
-	android:name
-		ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:56:19-91
-activity#com.example.android.computerstoreapp.view.CreatedOrder
-ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:58:9-59:20
-	android:name
-		ADDED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml:58:19-88
 uses-sdk
 INJECTED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/moon/Documents/ComputerStoreApp/app/src/main/AndroidManifest.xml

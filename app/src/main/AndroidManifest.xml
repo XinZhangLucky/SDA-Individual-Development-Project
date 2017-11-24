@@ -19,16 +19,6 @@
         </activity>
         <activity android:name="com.example.android.computerstoreapp.view.HomePageView">
         </activity>
-
-        <!--
-        <activity android:name=".vHomePageViewPage">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
-        </activity>
-        -->
         <activity android:name="com.example.android.computerstoreapp.view.CreateAccountPageView">
         </activity>
         <activity android:name="com.example.android.computerstoreapp.view.DesktopView">

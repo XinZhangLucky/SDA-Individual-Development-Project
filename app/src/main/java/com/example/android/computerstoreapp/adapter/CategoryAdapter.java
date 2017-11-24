@@ -13,12 +13,7 @@ import com.example.android.computerstoreapp.entity.Category;
 
 import java.util.List;
 
-/**
- * Created by android on 2017-10-26.
- */
-
-public class CategoryAdapter  extends RecyclerView.Adapter<CategoryAdapter.ViewHolder> {
-
+public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHolder> {
     private List<Category> mCategoryList;
     private String path;
     private static String classFoldName = ".view.";
@@ -30,52 +25,43 @@ public class CategoryAdapter  extends RecyclerView.Adapter<CategoryAdapter.ViewH
 
         public ViewHolder(View view) {
             super(view);
-
             categoryView = view;
             categoryImage = (ImageView) view.findViewById(R.id.category_image);
             categoryName = (TextView) view.findViewById(R.id.category_name);
         }
     }
 
-    public CategoryAdapter (List<Category> categoryList) {
+    public CategoryAdapter(List<Category> categoryList) {
         mCategoryList = categoryList;
     }
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.home_item, parent, false);
         final ViewHolder holder = new ViewHolder(view);
-        path=parent.getContext().getApplicationContext().getPackageName() + classFoldName;
+        path = parent.getContext().getApplicationContext().getPackageName() + classFoldName;
         holder.categoryView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 int position = holder.getAdapterPosition();
                 Category category = mCategoryList.get(position);
-            //    Toast.makeText(v.getContext(),"You clicked view" + category.getName(),Toast.LENGTH_SHORT).show();
-
-
                 Intent intent = null;
                 try {
-                    intent = new Intent(v.getContext(), Class.forName(path +category.getClassName()));
+                    intent = new Intent(v.getContext(), Class.forName(path + category.getClassName()));
                     v.getContext().startActivity(intent);
                 } catch (ClassNotFoundException e) {
                     e.printStackTrace();
                 }
-
             }
         });
-
         return holder;
     }
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-
         Category category = mCategoryList.get(position);
         holder.categoryImage.setImageResource(category.getImageId());
         holder.categoryName.setText(category.getName());
-
     }
 
     @Override

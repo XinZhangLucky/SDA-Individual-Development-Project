@@ -10,22 +10,28 @@
         android:id="@+id/menu_desktop"
         android:title="Desktop"
         app:showAsAction="never"/>
-    <item android:id="@+id/menu_notebook"
-          android:title="Notebook"
-          app:showAsAction="never"/>
-    <item android:id="@+id/menu_cpu"
-          android:title="CPU"
-          app:showAsAction="never"/>
-    <item android:id="@+id/menu_keyboard"
-          android:title="Keyboard"
-          app:showAsAction="never"/>
-    <item android:id="@+id/menu_memory"
-          android:title="Memory"
-          app:showAsAction="never"/>
-    <item android:id="@+id/menu_monitor"
-          android:title="Monitor"
-          app:showAsAction="never"/>
-    <item android:id="@+id/menu_mouse"
-          android:title="Mouse"
-          app:showAsAction="never"/>
+    <item
+        android:id="@+id/menu_notebook"
+        android:title="Notebook"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/menu_cpu"
+        android:title="CPU"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/menu_keyboard"
+        android:title="Keyboard"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/menu_memory"
+        android:title="Memory"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/menu_monitor"
+        android:title="Monitor"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/menu_mouse"
+        android:title="Mouse"
+        app:showAsAction="never"/>
 </menu>

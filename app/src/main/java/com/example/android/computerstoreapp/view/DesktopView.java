@@ -13,39 +13,29 @@ import com.example.android.computerstoreapp.entity.Product;
 import java.util.List;
 
 public class DesktopView extends BaseActivityView {
-
     protected DesktopBO mDesktopBO;
-
     private ProductAdapter adapter;
-
     private List<? extends Product> mDesktopList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         setContentView(R.layout.activity_desktop_main);
-
         mDesktopBO = new DesktopBO();
-
         mDesktopList = mDesktopBO.getDesktopProductArrayList();
         if (mDesktopList.size() == 0) {
             initDesktop();
             mDesktopList = mDesktopBO.getDesktopProductArrayList();
         }
-
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view_desktop);
         GridLayoutManager layoutManager = new GridLayoutManager(this, 2, LinearLayoutManager.VERTICAL, false);
         recyclerView.setLayoutManager(layoutManager);
         adapter = new ProductAdapter(mDesktopList);
         recyclerView.setAdapter(adapter);
-
-
         super.onCreate(savedInstanceState);
-
     }
 
     @Override
     protected void onResume() {
-
         super.onResume();
         mDesktopList = mDesktopBO.getDesktopProductArrayList();
         adapter.setProductList(mDesktopList);
@@ -108,6 +98,4 @@ public class DesktopView extends BaseActivityView {
                 22,
                 9);
     }
-
-
 }

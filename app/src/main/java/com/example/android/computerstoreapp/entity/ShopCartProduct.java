@@ -4,10 +4,6 @@ import org.litepal.crud.DataSupport;
 
 import java.io.Serializable;
 
-/**
- * Created by android on 2017-10-30.
- */
-
 public class ShopCartProduct extends DataSupport implements Serializable {
 
 

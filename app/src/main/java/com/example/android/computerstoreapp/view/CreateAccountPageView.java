@@ -25,8 +25,6 @@ public class CreateAccountPageView extends AppCompatActivity {
     private String password;
     //the input re-enter password
     private String passwordReEnter;
-
-
     private UserBO mUserBO;
     //the textview of the displayed error message for the name
     private TextView nameValid;
@@ -34,7 +32,6 @@ public class CreateAccountPageView extends AppCompatActivity {
     private TextView emailValid;
     //the textview of the displayed error message for the password
     private TextView passwordValid;
-
     //the edittext of the email
     private EditText emalEditText;
     //the edittext of the name
@@ -44,36 +41,22 @@ public class CreateAccountPageView extends AppCompatActivity {
     //the edittext of the re-enter password
     private EditText passwordReEnterEditText;
 
-
-    /**
-     * when click the 'Create your account' button, create new account.
-     *
-     * @param view
-     */
     public void createAccount(View view) {
-
         Log.d("CreateAccountPageView", "create");
-
         init();
         clearValidTextView();
         if (isValidCreateAccount()) {
-            User user =mUserBO.createUserForCustomer(name, password, email);
-
-            Toast.makeText(getApplicationContext(),"Your Account has been created!",Toast.LENGTH_SHORT).show();
-
+            User user = mUserBO.createUserForCustomer(name, password, email);
+            Toast.makeText(getApplicationContext(), "Your Account has been created!", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(
                     CreateAccountPageView.this,
                     HomePageView.class);
-
             SharedPreferences sharedPreferences = getSharedPreferences("user", Context.MODE_PRIVATE);
             Editor editor = sharedPreferences.edit();//获取编辑器
-
             editor.putString("email", user.getUserEmail());
             editor.commit();
-
             startActivity(intent);
         }
-
     }
 
     /**
@@ -112,7 +95,6 @@ public class CreateAccountPageView extends AppCompatActivity {
             emailValid.setVisibility(View.VISIBLE);
             flag = false;
         }
-
         return flag;
     }
 
@@ -120,39 +102,25 @@ public class CreateAccountPageView extends AppCompatActivity {
      * get the input information of the page
      */
     private void init() {
-
         name = (nameEditText != null) ? nameEditText.getText().toString() : "";
-
         email = (emalEditText != null) ? emalEditText.getText().toString() : "";
-
         password = (passwordEditText != null) ? passwordEditText.getText().toString() : "";
-
         passwordReEnter = (passwordReEnterEditText != null) ? passwordReEnterEditText.getText().toString() : "";
-
     }
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_account_page);
-
         mUserBO = new UserBO();
-
         nameValid = (TextView) findViewById(R.id.nameValid_textView);
-
         emailValid = (TextView) findViewById(R.id.emailValid_textView);
-
         passwordValid = (TextView) findViewById(R.id.passwordValid_textView);
-
         nameEditText = (EditText) findViewById(R.id.name_editText);
         emalEditText = (EditText) findViewById(R.id.email_editText);
-
         passwordEditText = (EditText) findViewById(R.id.password_editText);
         passwordReEnterEditText = (EditText) findViewById(R.id.passwordReEnter_editText);
-
         clearValidTextView();
-
     }
 
     /**

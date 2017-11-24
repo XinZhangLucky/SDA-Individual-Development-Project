@@ -5,12 +5,7 @@ import org.litepal.crud.DataSupport;
 import java.io.Serializable;
 import java.util.ArrayList;
 
-/**
- * Created by android on 2017-10-24.
- */
-
 public class Product extends DataSupport implements Serializable {
-
     protected String detail;
     protected String name;
     protected int cost;
@@ -18,23 +13,20 @@ public class Product extends DataSupport implements Serializable {
     protected int num;
     protected int productId;
 
-    public Product(){}
+    public Product() {
+    }
 
-    public Product(ArrayList<Object> prams){
-        this.detail =(String) prams.get(0);
+    public Product(ArrayList<Object> prams) {
+        this.detail = (String) prams.get(0);
         this.name = (String) prams.get(1);
         this.cost = (Integer) prams.get(2);
         this.imageId = (Integer) prams.get(3);
-        this.num =(Integer)prams.get(4);
-        this.productId=(Integer) prams.get(5);
+        this.num = (Integer) prams.get(4);
+        this.productId = (Integer) prams.get(5);
     }
 
     public int getProductId() {
         return productId;
-    }
-
-    public void setProductId(int productId) {
-        this.productId = productId;
     }
 
     public int getNum() {
@@ -49,16 +41,8 @@ public class Product extends DataSupport implements Serializable {
         return imageId;
     }
 
-    public void setImageId(int imageId) {
-        this.imageId = imageId;
-    }
-
     public String getDetail() {
         return detail;
-    }
-
-    public void setDetail(String detail) {
-        this.detail = detail;
     }
 
     public String getName() {
@@ -72,10 +56,5 @@ public class Product extends DataSupport implements Serializable {
     public int getCost() {
         return cost;
     }
-
-    public void setCost(int cost) {
-        this.cost = cost;
-    }
-
 
 }

@@ -9,7 +9,6 @@ import com.example.android.computerstoreapp.R;
 
 public class CreatedOrder extends BaseActivityView {
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

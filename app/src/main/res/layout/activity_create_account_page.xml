@@ -5,190 +5,195 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.android.computerstoreapp.view.CreateAccountPageView">
+
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="20dp"
                 android:scrollbars="vertical">
 
-    <GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-        <LinearLayout
+        <GridLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_column="0"
-            android:layout_margin="10dp"
-            android:layout_row="0"
-            android:orientation="horizontal">
-            <ImageView
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:adjustViewBounds="true"
-                android:scaleType="centerCrop"
-                android:src="@drawable/welcome"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Create Account"
-                android:textAlignment="center"
-                android:textSize="30sp"/>
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="1dp"
-            android:layout_row="1"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:padding="10dp"
-                android:text="Your name"
-                android:textSize="20sp"/>
-
-            <EditText
-                android:id="@+id/name_editText"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/colorAccent"
-                android:hint="name"
-                android:cursorVisible="true"
-                android:textCursorDrawable="@null"
-                android:padding="10dp"
-                android:textSize="20sp"/>
-
-            <TextView
-                android:id="@+id/nameValid_textView"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="The user name has been used."
-                android:textColor="@android:color/holo_red_dark"
-                android:textSize="20sp"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="1dp"
-            android:layout_row="2"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:padding="10dp"
-                android:text="e-mail"
-                android:textSize="20sp"/>
-
-            <EditText
-                android:id="@+id/email_editText"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/colorAccent"
-                android:hint="email"
-                android:cursorVisible="true"
-                android:textCursorDrawable="@null"
-                android:inputType="textEmailAddress"
-                android:padding="10dp"
-                android:textSize="20sp"/>
-            <TextView
-                android:id="@+id/emailValid_textView"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:textColor="@android:color/holo_red_dark"
-                android:textSize="20sp"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_row="3"
-            android:orientation="vertical">
-
-
-            <TextView
-                android:id="@+id/password_textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:text="password"
-                android:textSize="20sp"/>
-
-            <EditText
-                android:id="@+id/password_editText"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorAccent"
-                android:ems="10"
-                android:hint="password"
-                android:cursorVisible="true"
-                android:textCursorDrawable="@null"
-                android:inputType="textPassword"
-                android:padding="10dp"
-                android:textSize="20sp"/>
+                android:layout_column="0"
+                android:layout_margin="10dp"
+                android:layout_row="0"
+                android:orientation="horizontal">
 
-        </LinearLayout>
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/welcome"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_row="4"
-            android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Create Account"
+                    android:textAlignment="center"
+                    android:textSize="30sp"/>
+            </LinearLayout>
 
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:text="Re-enter the password"
-                android:textSize="20sp"/>
-
-            <EditText
-                android:id="@+id/passwordReEnter_editText"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorAccent"
-                android:ems="10"
-                android:hint="password"
-                android:cursorVisible="true"
-                android:textCursorDrawable="@null"
-                android:inputType="textPassword"
+                android:layout_margin="1dp"
+                android:layout_row="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="Your name"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/name_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorAccent"
+                    android:cursorVisible="true"
+                    android:hint="name"
+                    android:padding="10dp"
+                    android:textCursorDrawable="@null"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/nameValid_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="The user name has been used."
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="20sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_row="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="e-mail"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/email_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorAccent"
+                    android:cursorVisible="true"
+                    android:hint="email"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:textCursorDrawable="@null"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/emailValid_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="20sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="3"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/password_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="password"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/password_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAccent"
+                    android:cursorVisible="true"
+                    android:ems="10"
+                    android:hint="password"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:textCursorDrawable="@null"
+                    android:textSize="20sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="4"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Re-enter the password"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/passwordReEnter_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAccent"
+                    android:cursorVisible="true"
+                    android:ems="10"
+                    android:hint="password"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:textCursorDrawable="@null"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/passwordValid_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="The password is not legal."
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="20sp"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/createYourAccount_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_row="5"
+                android:onClick="createAccount"
                 android:padding="10dp"
-                android:textSize="20sp"/>
-            <TextView
-                android:id="@+id/passwordValid_textView"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="The password is not legal."
-                android:textColor="@android:color/holo_red_dark"
-                android:textSize="20sp"/>
-
-        </LinearLayout>
-
-        <Button
-            android:id="@+id/createYourAccount_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_row="5"
-            android:onClick="createAccount"
-            android:padding="10dp"
-            android:text="Create your account"
-            android:textSize="18sp"/>
-
-    </GridLayout>
+                android:text="Create your account"
+                android:textSize="18sp"/>
+        </GridLayout>
     </ScrollView>
 </LinearLayout>

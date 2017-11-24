@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/shopcart_item_layout"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              android:id="@+id/shopcart_item_layout"
               android:layout_marginTop="20dp"
               android:orientation="horizontal">
 
@@ -27,7 +27,6 @@
             android:layout_height="wrap_content"
             android:layout_column="0"
             android:layout_row="0"
-            android:text="ssssssssssssssssssssssssaaaaaaa"
             android:textSize="14sp"/>
 
         <TextView
@@ -40,6 +39,7 @@
 
 
     </GridLayout>
+
     <TextView
         android:id="@+id/shopcart_product_cost"
         android:layout_width="wrap_content"
@@ -51,12 +51,12 @@
 
     <EditText
         android:id="@+id/shopcart_product_num"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:cursorVisible="true"
         android:ems="10"
         android:inputType="number"
-        android:layout_width="50dp"
-        android:layout_marginLeft="10dp"
-        android:layout_height="wrap_content"
-        android:cursorVisible="true"
-        android:textCursorDrawable="@null"
-        android:text="1"/>
+        android:text="1"
+        android:textCursorDrawable="@null"/>
 </LinearLayout>

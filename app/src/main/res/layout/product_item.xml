@@ -39,7 +39,6 @@
             android:textColor="@android:color/holo_red_dark"
             android:textSize="14sp"/>
     </GridLayout>
-
 </LinearLayout>
 
 

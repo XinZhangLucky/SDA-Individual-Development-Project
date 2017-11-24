@@ -14,17 +14,13 @@ import com.example.android.computerstoreapp.view.DetailView;
 
 import java.util.List;
 
-/**
- * Created by android on 2017-10-26.
- */
-
 public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHolder> {
-
     private List<? extends Product> mProductList;
 
     public void setProductList(List<? extends Product> productList) {
         mProductList = productList;
     }
+
     static class ViewHolder extends RecyclerView.ViewHolder {
         View productView;
         ImageView productImage;
@@ -32,15 +28,11 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHold
         TextView productCost;
 
         public ViewHolder(View view) {
-
             super(view);
-
             productView = view;
             productImage = (ImageView) view.findViewById(R.id.product_image);
             productName = (TextView) view.findViewById(R.id.product_name);
-
             productCost = (TextView) view.findViewById(R.id.product_cost);
-
         }
     }
 
@@ -50,7 +42,6 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHold
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.product_item, parent, false);
         final ViewHolder holder = new ViewHolder(view);
         holder.productView.setOnClickListener(new View.OnClickListener() {
@@ -58,16 +49,13 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHold
             public void onClick(View v) {
                 int position = holder.getAdapterPosition();
                 Product product = mProductList.get(position);
-                Intent intent = new Intent(v.getContext(),DetailView.class);
+                Intent intent = new Intent(v.getContext(), DetailView.class);
 
-                intent.putExtra("product",  product);
-                intent.putExtra("id",position+1);
+                intent.putExtra("product", product);
+                intent.putExtra("id", position + 1);
                 v.getContext().startActivity(intent);
-
             }
         });
-
-
         return holder;
     }
 
@@ -77,13 +65,10 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHold
         holder.productImage.setImageResource(product.getImageId());
         holder.productName.setText(product.getName());
         holder.productCost.setText(String.valueOf(product.getCost()) + "Kr");
-
-
     }
 
     @Override
     public int getItemCount() {
         return mProductList.size();
     }
-
 }

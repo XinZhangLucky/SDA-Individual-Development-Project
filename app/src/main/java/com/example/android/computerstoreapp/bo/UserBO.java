@@ -6,12 +6,7 @@ import com.example.android.computerstoreapp.entity.User;
 
 import java.util.ArrayList;
 
-/**
- * Created by android on 2017-10-24.
- */
-
 public class UserBO {
-
     private UserDAO mUserDAO;
     private User mUser;
     private ArrayList<User> userArrayList;
@@ -26,18 +21,13 @@ public class UserBO {
         return user;
     }
 
-    /**
-     * @param email
-     * @return true email has been exist in the database
-     */
     public boolean hasExistEmail(String email) {
         userArrayList = (ArrayList<User>) mUserDAO.selectAll();
-        if(userArrayList == null){
+        if (userArrayList == null) {
             return false;
         }
         for (User userItem : userArrayList) {
             if (userItem.getUserEmail().equals(email)) {
-
                 return true;
             }
         }
@@ -46,7 +36,7 @@ public class UserBO {
 
     public boolean isValidUserForLogin(String email, String password) {
         userArrayList = (ArrayList<User>) mUserDAO.selectAll();
-        if(userArrayList == null){
+        if (userArrayList == null) {
             return false;
         }
         for (User userItem : userArrayList) {
@@ -57,17 +47,16 @@ public class UserBO {
         return false;
     }
 
-    public User getUser(String email){
+    public User getUser(String email) {
         userArrayList = (ArrayList<User>) mUserDAO.selectAll();
-        if(userArrayList == null){
+        if (userArrayList == null) {
             return null;
         }
         for (User userItem : userArrayList) {
-            if (userItem.getUserEmail().equals(email) ) {
+            if (userItem.getUserEmail().equals(email)) {
                 return userItem;
             }
         }
         return null;
     }
-
 }

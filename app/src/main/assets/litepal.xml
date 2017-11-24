@@ -8,7 +8,7 @@
     	For example:
     	<dbname value="demo" />
     -->
-    <dbname value="ComputerStore" />
+    <dbname value="ComputerStore"/>
 
     <!--
     	Define the version of your database. Each time you want
@@ -19,7 +19,7 @@
 			For example:
     	<version value="1" />
     -->
-    <version value="17" />
+    <version value="17"/>
 
     <!--
     	Define your models in the list with mapping tag, LitePal will
@@ -36,7 +36,6 @@
         <mapping class="com.example.android.computerstoreapp.entity.DesktopProduct"/>
         <mapping class="com.example.android.computerstoreapp.entity.OrderAddress"/>
         <mapping class="com.example.android.computerstoreapp.entity.ShopCartProduct"/>
-
         <mapping class="com.example.android.computerstoreapp.entity.MouseProduct"/>
     </list>
 
